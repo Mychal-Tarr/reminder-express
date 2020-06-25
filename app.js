@@ -10,9 +10,11 @@ const cors = require("cors");
 //variable reassignment
 const app = express();
 // to connect to the sever command 'npm start'
-app.listen(5000, () => {
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
   mongo();
-  console.log("Listening on port 5000...");
+  console.log(`Listening on port ${PORT}...`);
 });
 //middlewear (run before every request hits the route)
 app.use(express.json());
