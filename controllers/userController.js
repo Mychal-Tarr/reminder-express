@@ -87,7 +87,7 @@ exports.createUser = async (req, res) => {
       //   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       // }
 
-      main().catch(console.error);
+      //main().catch(console.error);
       res.status(200).send({
         sucess: true,
         message: "New User Created",
